@@ -1,0 +1,48 @@
+#Lung Cancer Detection:
+Using LUNA16 dataset:
+https://github.com/s-mostafa-a/Luna16
+Dataset LINK :
+https://academictorrents.com/collection/luna-lung-nodule-analysis-16---isbi-2016-challenge
+
+paper Insights:
+**Paper link**:
+https://arxiv.org/abs/1711.08324
+->Used CT scans (computerized tomography)
+
+Used two modules to classify the pulmonary nodules
+1->Used 3D-CNN to detect the pulmonary nodules
+2->Used Noisy-D and Leaky-Noisy Method to get the probability of pulmonary nodule, that could lead to CANCER
+
+-->nodule size < 6mm were ignored as they cannot cause cancer according to the doctors
+-->all the nodules in the dataset were carefully checked by the doctor and written their traits
+
+#Lung and colon Cancer Classification:
+Dataset:
+https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images
+->Used Histopathological Images
+->5 classes
+	Lung benign tissue
+    Lung adenocarcinoma
+    Lung squamous cell carcinoma
+    Colon adenocarcinoma
+    Colon benign tissue
+
+Approach:
+https://www.geeksforgeeks.org/lung-cancer-detection-using-convolutional-neural-network-cnn/
+
+
+#Lung cancer, pneumonia, COVID-19 classification:
+**Paper Link**
+https://www.sciencedirect.com/science/article/pii/S0010482521001426
+
+
+Used Models such as VGG19-CNN, ResNet152V2, ResNet152V2 + Gated Recurrent Unit (GRU), and ResNet152V2 + Bidi-rectional GRU (Bi-GRU)
+VGG-19 model given optimal results
+
+Dataset: (110 cases, 1190 images) Format : JPG, Size : 150MB
+https://www.kaggle.com/datasets/hamdallak/the-iqothnccd-lung-cancer-dataset
+source:
+https://medium.com/ai-techsystems/lung-cancer-detection-using-convolutional-neural-network-on-the-cainvas-platform-4db3fff604f9
+
+Dataset: (1010 patients, Source : Cancer Image archive) Format : DICOM, size : 125GB
+https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254
